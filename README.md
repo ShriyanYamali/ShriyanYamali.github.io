@@ -1,2 +1,3 @@
 # ShriyanYamali.github.io
-About Shriyan Yamali
+Webpage About Shriyan Yamali
+© 2024 Shriyan Yamali All rights reserved.
