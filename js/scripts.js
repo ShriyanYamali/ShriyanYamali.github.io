@@ -43,3 +43,99 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    let interval = null;
+
+    const h1Element = document.querySelector("h1");
+
+    // Your original code to run on page load
+    let iteration = 0;
+
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+        h1Element.innerText = h1Element.innerText
+            .split("")
+            .map((letter, index) => {
+                if (index < iteration) {
+                    return h1Element.dataset.value[index];
+                }
+
+                return letters[Math.floor(Math.random() * 26)];
+            })
+            .join("");
+
+        if (iteration >= h1Element.dataset.value.length) {
+            clearInterval(interval);
+        }
+
+        iteration += 1 / 5;
+    }, 30);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    let interval = null;
+
+    const h1Element = document.querySelector("#uniqueid");
+
+    // Your original code to run on page load
+    let iteration = 0;
+
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+        h1Element.innerText = h1Element.innerText
+            .split("")
+            .map((letter, index) => {
+                if (index < iteration) {
+                    return h1Element.dataset.value[index];
+                }
+
+                return letters[Math.floor(Math.random() * 26)];
+            })
+            .join("");
+
+        if (iteration >= h1Element.dataset.value.length) {
+            clearInterval(interval);
+        }
+
+        iteration += 42 / 100;
+    }, 30);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    let interval = null;
+
+    const h1Element = document.querySelector("#uniqueid1");
+
+    // Your original code to run on page load
+    let iteration = 0;
+
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+        h1Element.innerText = h1Element.innerText
+            .split("")
+            .map((letter, index) => {
+                if (index < iteration) {
+                    return h1Element.dataset.value[index];
+                }
+
+                return letters[Math.floor(Math.random() * 26)];
+            })
+            .join("");
+
+        if (iteration >= h1Element.dataset.value.length) {
+            clearInterval(interval);
+        }
+
+        iteration += 15 / 100;
+    }, 30);
+});

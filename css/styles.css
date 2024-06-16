@@ -109,6 +109,10 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  background: linear-gradient(rgba(255,255,255,255), rgba(255,255,255,255));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 h1, .h1 {
@@ -11068,10 +11072,20 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+
+  background: -webkit-linear-gradient(left, rgba(5, 96, 155, 1), rgba(1, 221, 150, 1));
+  background: -o-linear-gradient(right, rgba(5, 96, 155, 1), rgba(1, 221, 150, 1));
+  background: -moz-linear-gradient(right, rgba(5, 96, 155, 1), rgba(1, 221, 150, 1));
+  background: linear-gradient(to right, rgba(5, 96, 155, 1), rgba(1, 221, 150, 1)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+ /*background: linear-gradient(rgba(5,96,155,255), rgba(1,221,150,255));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
+ */
 }
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
@@ -11101,7 +11115,7 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 1) 95%);
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -11109,6 +11123,8 @@ body {
 
 .projects-section {
   padding: 10rem 0;
+  background-image: linear-gradient(to bottom, #000000, #1cabc4);
+  
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -11150,10 +11166,12 @@ body {
 
 .contact-section {
   padding-top: 5rem;
+  background-image: linear-gradient(to bottom, #1cabc4, #000000);
 }
 .contact-section .card {
   border: 0;
   border-bottom: 0.25rem solid #64a19d;
+  
 }
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
