@@ -1,4 +1,5 @@
 :root {
+  --card-color: rgb(25, 25, 25);
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #7464a1;
@@ -1485,10 +1486,10 @@ progress {
   .offset-xl-1 {
     margin-left: 8.33333333%;
   }
-  .offset-xl-2 {
-    margin-left: 16.66666667%;
-  }
-  .offset-xl-3 {
+  .offset-xl-2 {e
+    margin-left: 16.66666667%;e
+  }e
+  .offset-xl-3 {e
     margin-left: 25%;
   }
   .offset-xl-4 {
@@ -11087,6 +11088,13 @@ body {
           background-clip: text;
  */
 }
+
+.white{
+  color: white !important;
+}
+
+
+
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
   font-size: 1rem;
@@ -11145,24 +11153,24 @@ body {
   }
 }
 
-.signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+  user-select: none; /* -- Prevent image highlighting -- */
 }
-.signup-section .form-signup input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
 }
+
 
 .contact-section {
   padding-top: 5rem;
@@ -11211,4 +11219,54 @@ body {
 .bg-lightish{
   -bs-bg-opacity: 1;
   background-color: #1cabc4 !important;
+}
+
+
+#cards {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+  padding: 1em 0em;
+  place-self: center;
+  position: relative;
+  width: calc(100% - 2em);
+  z-index: 2;
+}
+
+.card {
+  background-color: var(--card-color);
+  border-radius: 0.75em;
+  cursor: pointer;
+  height: 240px;
+  position: relative;
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card:before {
+  background: linear-gradient(
+    45deg,
+    transparent 5%,
+    rgb(255, 215, 137) 50%,
+    transparent 99%
+  );
+  border-radius: inherit;
+  content: "";
+  inset: 0px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 400ms;
+  z-index: 0;
+}
+
+.card-content {
+  background-color: var(--card-color);
+  border-radius: inherit;
+  display: grid;
+  inset: 1px;
+  padding: 1em;
+  position: absolute;
 }
