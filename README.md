@@ -1,3 +1,3 @@
 # ShriyanYamali.github.io
-Webpage About Shriyan Yamali
-© 2024 Shriyan Yamali All rights reserved.
+# Made by Shriyan Yamali. 
+# Original template from startbootstrap.com
