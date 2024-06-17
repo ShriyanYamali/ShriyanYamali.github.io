@@ -11266,9 +11266,9 @@ body {
 .card:before {
   background: linear-gradient(
     45deg,
-    transparent 5%,
-    rgb(255, 215, 137) 50%,
-    transparent 99%
+    transparent 1%,
+    rgb(25, 215, 137) 1%,
+    transparent 90%
   );
   border-radius: inherit;
   content: "";
