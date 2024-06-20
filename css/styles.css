@@ -7710,6 +7710,13 @@ textarea.form-control-lg {
 .mx-auto {
   margin-right: auto !important;
   margin-left: auto !important;
+  border-top: solid #ff5c8a !important;
+
+}
+
+.mx-auto1 {
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 .my-0 {
@@ -11188,7 +11195,7 @@ body::-webkit-scrollbar {
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #ff5c8a;
   
 }
 .contact-section .card h4, .contact-section .card .h4 {
@@ -11199,7 +11206,7 @@ body::-webkit-scrollbar {
 }
 .contact-section .card hr {
   opacity: 1;
-  border-color: #64a19d;
+  border-color: #fff;
   border-width: 0.25rem;
   width: 3rem;
 }
