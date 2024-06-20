@@ -3852,7 +3852,7 @@ textarea.form-control-lg {
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
   font-size: var(--bs-navbar-brand-font-size);
-  color: var(--bs-navbar-brand-color);
+  color: black;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -4224,7 +4224,7 @@ textarea.form-control-lg {
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
-  --bs-navbar-brand-color: #fff;
+  --bs-navbar-brand-color: #000000;
   --bs-navbar-brand-hover-color: #fff;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -7903,15 +7903,6 @@ textarea.form-control-lg {
   padding-left: 1rem !important;
 }
 
-.px-4 {
-  padding-right: 1.5rem !important;
-  padding-left: 1.5rem !important;
-}
-
-.px-5 {
-  padding-right: 3rem !important;
-  padding-left: 3rem !important;
-}
 
 .py-0 {
   padding-top: 0 !important;
@@ -8252,12 +8243,7 @@ textarea.form-control-lg {
 
 .text-black-50 {
   --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important;
-}
-
-.text-white-50 {
-  --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(0, 0, 0) !important;
 }
 
 .text-reset {
@@ -8323,7 +8309,12 @@ textarea.form-control-lg {
 
 .bg-black {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+  background: #ff5d8f;
+}
+
+.bg-pink {
+  --bs-bg-opacity: 1;
+  background: #f2b5d4;
 }
 
 .bg-white {
@@ -11026,15 +11017,16 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: #000;
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    color: #000;
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: #000;
   }
   #mainNav .nav-link:active {
     color: #fff;
@@ -11078,8 +11070,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgb(186, 242, 187), rgb(171, 196, 255));
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11123,7 +11114,7 @@ body {
 }
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
+    height: 100vh; /* Change height of the main text in masthead */
     padding: 0;
   }
   .masthead h1, .masthead .h1 {
@@ -11136,10 +11127,13 @@ body {
     font-size: 1.25rem;
   }
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 1) 95%);
+  padding-bottom: 5rem;
+  background: linear-gradient(to bottom, rgb(171, 196, 255) 25%, rgb(128, 147, 241) 95%);
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -11147,7 +11141,7 @@ body {
 
 .projects-section {
   padding: 10rem 0;
-  background-image: linear-gradient(to bottom, #000000, #1cabc4);
+  background-image: linear-gradient(to bottom, #8093F1, #fadde1);
   
 }
 .projects-section .featured-text {
@@ -11190,7 +11184,7 @@ body {
 
 .contact-section {
   padding-top: 5rem;
-  background-image: linear-gradient(to bottom, #1cabc4, #000000);
+  background-image: linear-gradient(to bottom, #fadde1, #f2b5d4);
 }
 .contact-section .card {
   border: 0;
@@ -11266,7 +11260,7 @@ body {
   background: linear-gradient(
     45deg,
     transparent 1%,
-    rgb(25, 215, 137) 1%,
+    #ff5d8f 1%,
     transparent 90%
   );
   border-radius: inherit;
@@ -11305,4 +11299,8 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+
+h4 {
+  color: #000 !important;
 }

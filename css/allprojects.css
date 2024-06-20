@@ -579,7 +579,7 @@
     margin-top: -1rem;
     margin-bottom: 1rem;
     font-size: 0.875em;
-    color: #6c757d;
+    color: #000000;
   }
   .blockquote-footer::before {
     content: "— ";
@@ -3843,7 +3843,6 @@
     padding-bottom: var(--bs-navbar-brand-padding-y);
     margin-right: var(--bs-navbar-brand-margin-end);
     font-size: var(--bs-navbar-brand-font-size);
-    color: var(--bs-navbar-brand-color);
     text-decoration: none;
     white-space: nowrap;
   }
@@ -4215,7 +4214,7 @@
     --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
     --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
     --bs-navbar-active-color: #fff;
-    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-color: #000;
     --bs-navbar-brand-hover-color: #fff;
     --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -8242,7 +8241,7 @@
   }
   
   .text-black-50 {
-    --bs-text-opacity: 1;
+    --bs-text-opacity: 1 !important;
     color: rgba(0, 0, 0, 0.5) !important;
   }
   
@@ -11017,12 +11016,12 @@
     }
     #mainNav .navbar-brand {
       padding: 0.5rem 0;
-      color: rgba(255, 255, 255, 0.5);
+      color: #000;
     }
     #mainNav .nav-link {
       transition: none;
       padding: 2rem 1.5rem;
-      color: rgba(255, 255, 255, 0.5);
+      color: #000;
     }
     #mainNav .nav-link:hover {
       color: rgba(255, 255, 255, 0.75);
@@ -11070,7 +11069,7 @@
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+    background: linear-gradient(to bottom, rgb(186, 242, 187), rgb(171, 196, 255));
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -11123,13 +11122,13 @@
   font-size: 20px;
   white-space: nowrap;
   text-decoration: underline !important;
-  color: white
+  color: black;
 }
 
 .mp {
   font-size: 25px;
   white-space: nowrap;
-  color: white
+  color: black;
 }
 
 .big {
