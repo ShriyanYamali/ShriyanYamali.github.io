@@ -1487,7 +1487,7 @@ progress {
     margin-left: 8.33333333%;
   }
   .offset-xl-2 {e
-    margin-left: 16.66666667%;e
+    margin-left: 16.66666667%;
   }e
   .offset-xl-3 {e
     margin-left: 25%;
@@ -11111,7 +11111,6 @@ body {
 }
 
 
-
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
   font-size: 1rem;
@@ -11286,4 +11285,24 @@ body {
   inset: 1px;
   padding: 1em;
   position: absolute;
+}
+
+a {
+  color: #fff;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
