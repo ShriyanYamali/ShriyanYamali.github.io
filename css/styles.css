@@ -2876,10 +2876,10 @@ textarea.form-control-lg {
 
 .btn-tertiary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #2f67b5;
+  --bs-btn-bg: #227eff;
   --bs-btn-border-color: #7464a1;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #635589;
+  --bs-btn-hover-bg: #8587ff;
   --bs-btn-hover-border-color: #5d5081;
   --bs-btn-focus-shadow-rgb: 137, 123, 175;
   --bs-btn-active-color: #fff;
@@ -11140,7 +11140,7 @@ body::-webkit-scrollbar {
 
 .about-section {
   padding-bottom: 5rem;
-  background: linear-gradient(to bottom, rgb(171, 196, 255) 25%, rgb(128, 147, 241) 95%);
+  background: linear-gradient(to bottom, rgb(171, 196, 255) 10%, #fadde1 95%);
 }
 
 /* .about-section p {
@@ -11230,7 +11230,8 @@ body::-webkit-scrollbar {
 }
 
 .footer {
-  padding: 5rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .bg-lightish{

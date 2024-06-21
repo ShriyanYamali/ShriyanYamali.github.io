@@ -7364,3 +7364,11 @@ body::-webkit-scrollbar {
   left: -150px !important; /* Adjust this value as needed */
   top: -1.8px !important;
 }
+
+#mainNav {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.footer {
+  padding-bottom: 3rem;
+}
