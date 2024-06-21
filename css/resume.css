@@ -7356,11 +7356,11 @@ body::-webkit-scrollbar {
 
 .navbar-nav {
   position: relative !important;
-  left: -130px !important; /* Adjust this value as needed */
+  left: 30px !important; /* Adjust this value as needed */
 }
 
 .navbar-brand {
   position: relative !important;
-  left: 5px !important; /* Adjust this value as needed */
+  left: -150px !important; /* Adjust this value as needed */
   top: -1.8px !important;
 }
