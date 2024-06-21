@@ -11117,7 +11117,7 @@ body {
 }
 @media (min-width: 992px) {
   .masthead {
-    height: 75vh; /* Change height of the main text in masthead */
+    height: 73vh; /* Change height of the main text in masthead */
     padding: 0;
   }
   .masthead h1, .masthead .h1 {
@@ -11226,7 +11226,7 @@ body::-webkit-scrollbar {
 }
 
 .footer {
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 3rem;
 }
 
