@@ -11074,21 +11074,17 @@ body {
 
 .masthead {
   position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
   background: linear-gradient(to bottom, rgb(186, 242, 187), rgb(171, 196, 255));
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+
 }
 .masthead h1, .masthead .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-
   background: -webkit-linear-gradient(left, rgba(5, 96, 155, 1), rgba(1, 221, 150, 1));
   background: -o-linear-gradient(right, rgba(5, 96, 155, 1), rgba(1, 221, 150, 1));
   background: -moz-linear-gradient(right, rgba(5, 96, 155, 1), rgba(1, 221, 150, 1));
@@ -11121,7 +11117,7 @@ body {
 }
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh; /* Change height of the main text in masthead */
+    height: 75vh; /* Change height of the main text in masthead */
     padding: 0;
   }
   .masthead h1, .masthead .h1 {
@@ -11311,4 +11307,16 @@ a:active {
 
 h4 {
   color: #000 !important;
+}
+
+.no-pad {
+    padding: 0 !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-inline-start: 0 !important;
+    padding-inline-end: 0 !important;
+    padding-block-start: 0 !important;
+    padding-block-end: 0 !important;
 }
