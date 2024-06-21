@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
             clearInterval(interval);
         }
 
-        iteration += 42 / 100;
+        iteration += 45 / 100;
     }, 30);
 });
 
