@@ -3847,7 +3847,7 @@
     white-space: nowrap;
   }
   .navbar-brand:hover, .navbar-brand:focus {
-    color: var(--bs-navbar-brand-hover-color);
+  color: #64a19d;;
   }
   
   .navbar-nav {
@@ -10998,7 +10998,7 @@
     padding: 0.9rem 0;
   }
   #mainNav .navbar-nav .nav-item:hover {
-    color: fade(#fff, 80%);
+    color: #64a19d;
     outline: none;
     background-color: transparent;
   }
@@ -11024,7 +11024,7 @@
       color: #000;
     }
     #mainNav .nav-link:hover {
-      color: rgba(255, 255, 255, 0.75);
+      color: #64a19d;
     }
     #mainNav .nav-link:active {
       color: #fff;
@@ -11138,4 +11138,13 @@
 /* Hide scrollbar */
 body::-webkit-scrollbar {
   display: none;
+}
+
+.bg-pink {
+  --bs-bg-opacity: 1;
+  background: rgb(171, 196, 255);
+}
+
+.footer {
+  padding: 3rem 0;
 }
