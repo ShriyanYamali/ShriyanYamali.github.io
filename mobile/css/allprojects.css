@@ -11148,3 +11148,7 @@ body::-webkit-scrollbar {
 .footer {
   padding-bottom: 3rem;
 }
+
+.pad {
+  padding-bottom: 2rem;
+}
