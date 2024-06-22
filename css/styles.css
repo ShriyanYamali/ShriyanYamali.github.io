@@ -11322,9 +11322,9 @@ h4 {
 }
 
 body {
-  cursor: url('/assets/icons8-black-circle-48.png'), default !important;
+  cursor: url('/assets/circle.png'), default !important;
 }
 
 .cursor {
-  cursor: url('/assets/icons8-black-circle-48.png'), default !important;
+  cursor: url('/assets/circle.png'), default !important;
 }
