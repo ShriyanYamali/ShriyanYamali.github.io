@@ -11117,7 +11117,7 @@
   }
   @media (min-width: 992px) {
     .masthead {
-      height: 73vh; /* Change height of the main text in masthead */
+      height: 77vh; /* Change height of the main text in masthead */
       padding: 0;
     }
     .masthead h1, .masthead .h1 {
