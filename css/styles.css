@@ -11326,7 +11326,3 @@ h4 {
 body {
   cursor: url('/assets/circle.png'), default !important;
 }
-
-.custom-cursor {
-  cursor: url('/assets/circle.png'), default !important;
-}

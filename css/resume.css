@@ -7372,3 +7372,7 @@ body::-webkit-scrollbar {
 .footer {
   padding-bottom: 3rem;
 }
+
+body {
+  cursor: url('/assets/circle.png'), default !important;
+}

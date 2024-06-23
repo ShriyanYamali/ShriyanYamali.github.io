@@ -11286,3 +11286,7 @@ h2, .h2 {
   -webkit-text-fill-color: transparent !important;
   font-size: 45px !important;
 }
+
+body {
+  cursor: url('/assets/circle.png'), default !important;
+}
