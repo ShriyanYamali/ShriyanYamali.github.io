@@ -1,7 +1,7 @@
 [![Maintenance](https://img.shields.io/maintenance/yes/2024)](https://github.com/ShriyanYamali/ShriyanYamali.github.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# ShriyanYamali.github.io
+#### ShriyanYamali.github.io
 ### Made by Shriyan Yamali. 
 ### This GitHub repository serves to house code and host Shriyan Yamali's personal website.
 ### License
