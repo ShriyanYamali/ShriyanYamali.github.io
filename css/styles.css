@@ -11329,9 +11329,20 @@ h4 {
   position: absolute;
   top: 100px; /* Adjust the value as needed */
   padding-bottom: 20rem !important;
+  padding: 20px; /* Adjust as needed */
+  pointer-events: none;
+}
+
+.move-down img {
+  pointer-events: auto; /* Ensure the image itself is still interactive */
 }
 
 .padding-down {
   padding-bottom:30rem;
   padding-top: 30rem;
 }
+
+.no-highlight {
+  user-select: none;
+}
+

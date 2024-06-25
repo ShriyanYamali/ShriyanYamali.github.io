@@ -11134,7 +11134,7 @@
   }
   
   .about-section {
-    padding-top: 33rem;
+    padding-top: 25rem;
     padding-bottom: 5rem;
     background: linear-gradient(to bottom, rgb(171, 196, 255) 10%, #fadde1 95%);
   }
@@ -11342,13 +11342,19 @@ p {
 }
 
 .move-down {
-  padding-top: 18rem;
+  padding-top: 25rem !important;
   position: absolute;
   top: 100px; /* Adjust the value as needed */
-  padding-bottom: 25rem !important;
+  padding-bottom: 20rem !important;
+  padding: 20px; /* Adjust as needed */
 }
+
 
 .resize {
   width: 400px;
   height: auto;
+}
+
+.no-highlight {
+  user-select: none;
 }
