@@ -11130,8 +11130,8 @@
     }
   }
   body::-webkit-scrollbar {
-    display: none;
-  }
+    -webkit-appearance: none;
+}
   
   .about-section {
     padding-top: 25rem;
