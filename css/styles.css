@@ -11119,7 +11119,7 @@ body {
 }
 @media (min-width: 992px) {
   .masthead {
-    height: 77vh; /* Change height of the main text in masthead */
+    height: 75vh; /* Change height of the main text in masthead */
     padding: 0;
   }
   .masthead h1, .masthead .h1 {
@@ -11325,11 +11325,7 @@ h4 {
 }
 
 .move-down {
-  padding-top: 3rem;
   position: absolute;
-  top: 100px; /* Adjust the value as needed */
-  padding-bottom: 20rem !important;
-  padding: 20px; /* Adjust as needed */
   pointer-events: none;
 }
 
@@ -11346,3 +11342,26 @@ h4 {
   user-select: none;
 }
 
+.image-container {
+  position: relative;
+  width: 100%; /* Ensure container takes full width */
+  height: auto; /* Ensure container height adjusts with content */
+}
+
+@media (min-width: 600px) {
+  .move-down {
+    top: 30% !important; /* Adjust the value for larger screens */
+    padding-top: 0% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .move-down {
+    top: 20%; /* Adjust the value for even larger screens */
+    padding-top: 100%;
+  }
+}
+
+.img-down-pad {
+  padding-bottom: 20rem;
+}
