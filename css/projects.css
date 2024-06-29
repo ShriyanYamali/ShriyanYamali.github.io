@@ -11311,3 +11311,13 @@
   h4 {
     color: #000 !important;
   }
+
+    /* Optional: Custom styles for dropdown */
+.dropdown-menu {
+  background-color: #f8f9fa;
+  border: none;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item:hover {
+  background-color: #e9ecef;
+}
