@@ -65,7 +65,7 @@ background: rgb(122, 142, 220); /* change color of square background */
   bottom: 0;
   width: 2px;
   background: #ccc; /* Change color of timeline */
-  height: 89.3%; /* adjust the height of the bottom of the vertical line*/
+  height: 89.5%; /* adjust the height of the bottom of the vertical line*/
 }
 .timeline-item {
   position: relative;
