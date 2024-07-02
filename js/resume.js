@@ -17,3 +17,23 @@ document.addEventListener('scroll', function() {
     }
 });
 
+document.getElementById('see-more-btn').addEventListener('click', function() {
+    const moreContent = document.querySelector('.more-content');
+    const timeline = document.querySelector('.timeline');
+
+    console.log('Button clicked'); // Check if the button click is detected
+
+    if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+        moreContent.style.display = 'block';
+        this.textContent = 'See less...';
+        console.log('Adding expanded class'); // Check if the condition is met to add the class
+        timeline.classList.add('expanded');
+    } else {
+        moreContent.style.display = 'none';
+        this.textContent = 'See more...';
+        console.log('Removing expanded class'); // Check if the condition is met to remove the class
+        timeline.classList.remove('expanded');
+    }
+
+    console.log('Current classes:', timeline.className); // Output the current classes of the timeline element
+});

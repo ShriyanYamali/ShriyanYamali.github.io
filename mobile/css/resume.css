@@ -57,22 +57,30 @@ background: rgb(122, 142, 220); /* change color of square background */
   position: relative;
   padding: 20px 0;
 }
+
 .timeline::before {
   content: '';
   position: absolute;
   left: 150px;
-  top: 60px; /* adjust the height of the top of the vertical line*/
+  top: 60px;
   bottom: 0;
   width: 2px;
-  background: #ccc; /* Change color of timeline */
-  height: 89.5%; /* adjust the height of the bottom of the vertical line*/
+  background: #ccc;
+  height: 91.4%;                 /*change the height of the bottom line*/
+  transition: height 0.3s ease;
 }
+
+.timeline.expanded::before {
+  height: 92.7%;                     /*change the height of the bottom line after clickign see more*/
+}
+
 .timeline-item {
   position: relative;
   padding-left: 200px;
   margin-bottom: 60px;
   color: #333;
 }
+
 .timeline-item::before {
   content: '';
   position: absolute;
@@ -81,29 +89,27 @@ background: rgb(122, 142, 220); /* change color of square background */
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #333; /* change color of background of circle */
+  background: #333;
 }
+
 .timeline-item h3 {
   margin: 0;
   font-size: 20px;
 }
+
 .timeline-item p {
   margin: 5px 0;
 }
+
 .timeline-item .time-period {
   position: absolute;
   left: -40px;
   top: 5px;
-  width: 130px; 
+  width: 130px;
   text-align: right;
   font-size: 16px;
   color: #666;
   white-space: nowrap;
-}
-
-.time-period {
-  padding-left: 0.7rem;
-  font-size: 14.5px !important;
 }
 
 .awards {
@@ -7385,4 +7391,23 @@ body::-webkit-scrollbar {
 
 .footer {
   padding-bottom: 3rem;
+}
+
+.more-content {
+  display: none;
+}
+
+.see-more {
+  color: #007BFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.see-more:hover {
+  color: #0056b3;
+}
+
+.small-br {
+  line-height: 40px;
+  content: " ";
 }
