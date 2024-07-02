@@ -71,7 +71,7 @@ background: rgb(122, 142, 220); /* change color of square background */
 }
 
 .timeline.expanded::before {
-  height: 92.6%;                     /*change the height of the bottom line after clicking see more*/
+  height: 92.4%;                     /*change the height of the bottom line after clicking see more*/
 }
 
 .timeline-item {
