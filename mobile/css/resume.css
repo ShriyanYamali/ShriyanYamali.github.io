@@ -103,11 +103,11 @@ background: rgb(122, 142, 220); /* change color of square background */
 
 .timeline-item .time-period {
   position: absolute;
-  left: -40px;
+  left: -25px;
   top: 5px;
   width: 130px;
   text-align: right;
-  font-size: 16px;
+  font-size: 14.5px;
   color: #666;
   white-space: nowrap;
 }
@@ -7376,12 +7376,12 @@ body::-webkit-scrollbar {
 
 .navbar-nav {
   position: relative !important;
-  left: 30px !important; /* Adjust this value as needed */
+  left: 30px !important; 
 }
 
 .navbar-brand {
   position: relative !important;
-  left: -150px !important; /* Adjust this value as needed */
+  left: -150px !important; 
   top: -1.8px !important;
 }
 
