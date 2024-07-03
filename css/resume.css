@@ -72,7 +72,7 @@ body {
 }
 
 .timeline.expanded::before {
-  height: 91.2%;                     /*change the height of the bottom line after clickign see more*/
+  height: 91%;                     /*change the height of the bottom line after clicking see more*/
 }
 
 .timeline-item {

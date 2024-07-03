@@ -25,12 +25,12 @@ document.getElementById('see-more-btn').addEventListener('click', function() {
 
     if (moreContent.style.display === 'none' || moreContent.style.display === '') {
         moreContent.style.display = 'block';
-        this.textContent = 'See less...';
+        this.textContent = 'Hide Placements';
         console.log('Adding expanded class'); // Check if the condition is met to add the class
         timeline.classList.add('expanded');
     } else {
         moreContent.style.display = 'none';
-        this.textContent = 'See more...';
+        this.textContent = 'View Placements';
         console.log('Removing expanded class'); // Check if the condition is met to remove the class
         timeline.classList.remove('expanded');
     }
