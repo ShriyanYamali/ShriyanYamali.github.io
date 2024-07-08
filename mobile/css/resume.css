@@ -66,12 +66,12 @@ background: rgb(122, 142, 220); /* change color of square background */
   bottom: 0;
   width: 2px;
   background: #ccc;
-  height: 91.56%;                 /*change the height of the bottom line*/
+  height: 91.65%;                 /*change the height of the bottom line*/
   transition: height 0.3s ease;
 }
 
 .timeline.expanded::before {
-  height: 92.66%;                     /*change the height of the bottom line after clicking view placements*/
+  height: 92.75%;                     /*change the height of the bottom line after clicking view placements*/
 }
 
 .timeline-item {
