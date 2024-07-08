@@ -67,7 +67,7 @@ body {
   bottom: 0;
   width: 2px;
   background: #ccc;
-  height: 90%;                 /*change the height of the bottom line*/
+  height: 90.5%;                 /*change the height of the bottom line*/
   transition: height 0.3s ease;
 }
 
