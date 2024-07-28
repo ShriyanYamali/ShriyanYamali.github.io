@@ -7411,3 +7411,7 @@ body::-webkit-scrollbar {
   line-height: 40px;
   content: " ";
 }
+.fa-download-padding {
+  padding-left: 0.85rem;
+  padding-right: 0.85rem;
+}

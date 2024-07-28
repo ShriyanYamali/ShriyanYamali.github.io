@@ -11142,7 +11142,7 @@ body::-webkit-scrollbar {
 
 .bg-pink {
   --bs-bg-opacity: 1;
-  background: rgb(171, 196, 255);
+  background: #ABC4FF;
 }
 
 .footer {

@@ -90,7 +90,6 @@
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
-    color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
     background-color: var(--bs-body-bg);
     -webkit-text-size-adjust: 100%;
@@ -154,6 +153,7 @@
   p {
     margin-top: 0;
     margin-bottom: 1rem;
+    color: #e6f0eb !important;
   }
   
   abbr[title] {
@@ -623,8 +623,6 @@
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * 0.5);
-    padding-left: calc(var(--bs-gutter-x) * 0.5);
     margin-right: auto;
     margin-left: auto;
   }
@@ -3678,8 +3676,6 @@
   }
   
   .nav {
-    --bs-nav-link-padding-x: 1rem;
-    --bs-nav-link-padding-y: 0.5rem;
     --bs-nav-link-font-weight: ;
     --bs-nav-link-color: var(--bs-link-color);
     --bs-nav-link-hover-color: var(--bs-link-hover-color);
@@ -3805,11 +3801,7 @@
     --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
     --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
     --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
-    --bs-navbar-brand-padding-y: 0.3125rem;
-    --bs-navbar-brand-margin-end: 1rem;
     --bs-navbar-brand-font-size: 1.25rem;
-    --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
-    --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
     --bs-navbar-nav-link-padding-x: 0.5rem;
     --bs-navbar-toggler-padding-y: 0.25rem;
     --bs-navbar-toggler-padding-x: 0.75rem;
@@ -3839,9 +3831,8 @@
     justify-content: space-between;
   }
   .navbar-brand {
-    padding-top: var(--bs-navbar-brand-padding-y);
-    padding-bottom: var(--bs-navbar-brand-padding-y);
-    margin-right: var(--bs-navbar-brand-margin-end);
+    padding-top: 0rem !important;
+    padding-bottom: 3rem !important;
     font-size: var(--bs-navbar-brand-font-size);
     text-decoration: none;
     white-space: nowrap;
@@ -10989,22 +10980,10 @@
     color: #64a19d;
     border: 1px solid #64a19d;
   }
-  #mainNav .navbar-toggler:focus {
-    outline: none;
-  }
   #mainNav .navbar-brand {
     color: #000;
+    padding-bottom: 1.5rem !important;
     font-weight: 700;
-    padding: 0.9rem 0;
-  }
-  #mainNav .navbar-nav .nav-item:hover {
-    color: #64a19d;
-    outline: none;
-    background-color: transparent;
-  }
-  #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
-    outline: none;
-    background-color: transparent;
   }
   @media (min-width: 992px) {
     #mainNav {
@@ -11015,7 +10994,6 @@
       transition: background-color 0.3s ease-in-out;
     }
     #mainNav .navbar-brand {
-      padding: 0.5rem 0;
       color: #000;
     }
     #mainNav .nav-link {
@@ -11069,7 +11047,6 @@
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
-    background: linear-gradient(to bottom, rgb(186, 242, 187), rgb(171, 196, 255));
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -11142,11 +11119,11 @@ body::-webkit-scrollbar {
 
 .bg-pink {
   --bs-bg-opacity: 1;
-  background: rgb(171, 196, 255);
+  background: linear-gradient(to bottom, #4278f5, #4245f5);
 }
 
 .footer {
-  padding-top: 30rem;
+  padding-top: 10rem;
   padding-bottom: 3rem;
 }
 
@@ -11162,3 +11139,216 @@ body::-webkit-scrollbar {
 .dropdown-item:hover {
   background-color: #e9ecef;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.projects-section{
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vH;
+  background: linear-gradient(to bottom, #42b3f5, #4278f5);
+  font-family: Roboto;
+}
+
+h1{
+  font-size: 40pt;
+  font-weight: 500;
+  color: #000;
+}
+
+.container {
+  margin-top: 25px; /*Change height of navbar*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 410px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.item:hover{
+  cursor: pointer;
+}
+
+.item *{
+  transition: all 0.35s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+  height: 310px;
+}
+
+.item:hover img {
+  opacity: 0;
+}
+
+.text{
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: -100px;
+  left: 10%;
+  color: #01A2AC;
+}
+
+.text h3{
+  color: black;
+}
+
+.item:hover .text{
+  top: 20%;
+}
+
+.item:hover .button{
+  bottom: 20%;
+}
+
+.item .button{
+  position: absolute;
+  bottom: -100px;
+  left: 25%;
+  width: 50%;
+  border: 3px solid #01A2AC;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+  background-color: #01A2AC;
+  color: #F5F5F5;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background: linear-gradient(to bottom, #42b3f5, #4278f5);
+  margin: 5% auto;
+  box-sizing: border-box;
+  width: 700px;
+  max-height: 714px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.scale{
+  animation: scale 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scale{
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+#img{
+  width: 100%;
+  height: 450px;
+}
+
+#details{
+  padding: 25px;
+  text-align: left;
+  position: relative;
+  height: 264px;
+  box-sizing: border-box;
+  border-top: 1px solid #363638;
+}
+
+#details *{
+  transition: all .3s;
+}
+
+#title{
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#github {
+  font-size: 50px; /* Adjust the size as needed */
+  position: absolute;
+  top: 70%; /* Adjust this value to move the icon down */
+  right: 10%;
+  transform: translateX(100%);
+}
+
+
+#details .button{
+  position: absolute;
+  width: 30%;
+  background-color: #01A2AC;
+  color: #F5F5F5;
+  text-align: center;
+  left: 25px;
+  bottom: 35px;
+  padding: 15px;
+}
+
+#details i{
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  font-size: 3rem;
+  color: #01A2AC;
+}
+
+#details .button:hover,
+i:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #363638;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.black-h3 {
+  color: #000 !important;
+}
+
+  }

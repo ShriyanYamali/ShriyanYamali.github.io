@@ -37,3 +37,4 @@ document.getElementById('see-more-btn').addEventListener('click', function() {
 
     console.log('Current classes:', timeline.className); // Output the current classes of the timeline element
 });
+
