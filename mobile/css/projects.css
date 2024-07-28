@@ -2842,10 +2842,10 @@
   
   .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #64a19d;
+    --bs-btn-bg: rgb(159, 83, 148);
     --bs-btn-border-color: #64a19d;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #558985;
+    --bs-btn-hover-bg: #842a72;
     --bs-btn-hover-border-color: #50817e;
     --bs-btn-focus-shadow-rgb: 123, 175, 172;
     --bs-btn-active-color: #fff;
@@ -8321,7 +8321,7 @@
   
   .bg-pink {
     --bs-bg-opacity: 1;
-    background: #fadde1;
+    background: #8c85ca;
   }
   
   .bg-white {
@@ -11149,7 +11149,7 @@
   
   .projects-section {
     padding: 10rem 0;
-    background-image: linear-gradient(to bottom, #8093F1, #fadde1);
+    background-image: linear-gradient(to bottom, #f49392, #8c85ca);
     
   }
   .projects-section .featured-text {
@@ -11158,7 +11158,7 @@
   @media (min-width: 992px) {
     .projects-section .featured-text {
       padding: 0 0 0 2rem;
-      border-left: 0.5rem solid #64a19d;
+      border-left: 0.5rem solid rgba(225, 163, 202, 20);
     }
   }
   .projects-section .project-text {

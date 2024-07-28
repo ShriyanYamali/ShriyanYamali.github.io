@@ -11150,13 +11150,13 @@ body{
 }
 
 .projects-section{
-  padding-top: 5rem;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vH;
+  height: 100vH;
   background: linear-gradient(to bottom, #42b3f5, #4278f5);
-  font-family: Roboto;
+  font-family: Varela Round;
 }
 
 h1{

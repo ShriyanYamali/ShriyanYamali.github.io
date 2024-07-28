@@ -1,7 +1,7 @@
 var modalInfo = {
     1: {
-      title: "European Commission's Competition Cases Keyword Search",
-      info: "A tool for searching keywords related to market definitions in European Commission competition cases. It helps users find relevant cases by entering specific keywords.",
+      title: "European Commission Competition Cases Keyword Search",
+      info: "A website for searching keywords related to market definitions in European Commission competition cases.",
       link: "https://competitioncaseskeywordsearch.github.io/",
       github: "https://github.com/CompetitionCasesKeywordSearch/competitioncaseskeywordsearch.github.io"
     },
